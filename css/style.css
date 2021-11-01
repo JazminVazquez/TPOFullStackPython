@@ -321,7 +321,7 @@ footer{
 
 .content{
 
-  transform: translateY(-35%);
+  transform: translateY(-25%);
 
 }
 
@@ -410,7 +410,11 @@ footer{
 
   }
 
- 
+  .contacto{
+
+    margin-left: 30%;
+
+  }
   
 
 }
