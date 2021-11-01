@@ -6,45 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/img/fotuli.png">
     <script src="..\js\validate.js"></script>
-    <title>js</title>
+    <title>Contacto</title>
 </head>
 
 <body>
-    <h1 class="datos-title2">Donde encontrarnos:</h1>
-    <div class="map-responsive">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.06049726218!2d-64.26455536061215!3d-31.399434069203647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1635746318819!5m2!1sen!2sar"
-            width="600" height="600" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+
+    <div class="contenedor-contacto" id = "animado">
+        <header>
+            <h1 id="title"> <span class="highlight">✧˖° Cristales °˖✧</span> </h1>
+            <nav>
+              <ul class="menu">
+                <li><a href="..\index.html">Home</a></li>
+                <li><a href="Limpieza.html">Limpieza</a></li>
+                <li><a href="Consejos.html">Consejos</a></li>
+              </ul>
+            </nav>
+          </header>
+    
+        <h1 class="datos-title2">Donde encontrarnos:</h1>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.06049726218!2d-64.26455536061215!3d-31.399434069203647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1635746318819!5m2!1sen!2sar"
+                width="600" height="600" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
+        <div class="content">
+    
+            <h1 class="datos-title">Dejanos tus datos:</h1>
+            <form action="" id="form" class="form">
+    
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="mail">Mail</label>
+                    <input type="text" name="mail" id="mail">
+                </p>
+                <p>
+                    <label for="tel">Telefono</label>
+                    <input type="text" name="tel" id="tel">
+                </p>
+                <p>
+                    <label for="msg">Mensaje</label>
+                    <textarea name="msg" id="msg"></textarea>
+                </p>
+                <br>
+                <input type="submit" value="Enviar">
+    
+    
+            </form>
+        </div>
     </div>
-    <div class="content">
-
-        <h1 class="datos-title">Dejanos tus datos:</h1>
-        <form action="" id="form" class="form">
-
-            <p>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name">
-            </p>
-            <p>
-                <label for="mail">Mail</label>
-                <input type="text" name="mail" id="mail">
-            </p>
-            <p>
-                <label for="tel">Telefono</label>
-                <input type="text" name="tel" id="tel">
-            </p>
-            <p>
-                <label for="msg">Mensaje</label>
-                <textarea name="msg" id="msg"></textarea>
-            </p>
-            <br>
-            <input type="submit" value="Enviar">
-
-
-        </form>
-    </div>
+    
 </body>
-<footer>Comision 1117 Full Stack Python | Jazmin Vazquez ©</footer>
+    <footer>Comision 1117 Full Stack Python | Jazmin Vazquez ©</footer>
+
+    <h2 class="now-playing">Now playing:</h2>
+  <div class="container-audio">
+    <audio controls loop autoplay>
+      <source src="..\music\1-Hour-Joji-Chill-Mix-_Lyrics_.ogg" type="audio/ogg">
+    </audio>
+  </div>
 
 </html>

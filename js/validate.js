@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    document.getElementById("form").addEventListener('submit', validarFormulario);
+    if(document.getElementById("form")){
+        document.getElementById("form").addEventListener('submit', validarFormulario);
+    }
 
 });
 
@@ -20,3 +22,14 @@ function validarFormulario(evento){
     document.getElementById("form").reset();
 
 }
+
+window.onload=function(){
+
+    let animacion = document.getElementById('animado');
+    animacion.style.animation = 'mover 1s ease-out';
+
+}
+
+const element = document.querySelector(audio);
+
+audio.play();

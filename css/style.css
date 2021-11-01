@@ -12,49 +12,39 @@
   font-family: "Cloister Black Light";
   margin-top: 45px;
   margin-bottom: 45px;
-  text-shadow: 1px 1px 2px lightpink;
+  text-shadow: 3px 3px 4px lightpink;
 }
 /*.highlight{
     background: linear-gradient(180deg,rgba(21, 255, 0, 0) 50%, #ff1bff57 50%);
 }*/
-#centrao1{
-    text-align: center;
-    font-size: 16px;
-    color: snow;
-}
 
-.menu-section{
-  padding-bottom: 2em;
-  
-}
+/* Start  styling the page */
 
-.menu-simple ul{
-  list-style-type: none;
-  padding: 0%;
-  margin: 0%;
-  
-}
-
-.menu-simple ul li a{
-  text-decoration: none;
-  color: antiquewhite;
-  padding: .6em 1em;
-}
-
-.menu-simple ul li a:hover{
-  border-bottom: 1px solid hsl(10, 10%, 10%);
-}
-
-.menu-simple ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-}
-
-.menu-simple li{
+.now-playing{
   text-align: center;
-  flex: 1 0 auto;
+  color: rgb(89, 94, 99);
+  font-family: "Cloister Black Light";
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-shadow: 1px 1px 2px lightpink;
+  font-size: 50px;
+}
+
+.container-audio {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(64, 17, 139, 0.24);
+  color: rgb(100, 89, 89);
+  margin: 5px auto;
+  overflow: hidden;
+}
+audio {
+width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+  margin: 0;
 }
 
 nav{
@@ -98,6 +88,7 @@ html {
   height: 10vh;
   list-style: none;
   opacity: 1;
+
 }
 
 .menu li {
@@ -143,13 +134,14 @@ html {
   }
 }
 
+@keyframes mover{
 
-#fotuli{
-    image-rendering: auto;
-    padding: 20px;
-    margin-left: 675px;
-    width: 400px;
-    height: 400px;
+  0%{
+
+    transform: translate(100%);
+
+  }
+
 }
 
 li{
@@ -157,30 +149,14 @@ li{
     margin: auto;
 }
 
-ul.square li{
-    list-style: square;
-}
 
-tr, td{
-  margin-left: 700px;
-  border: double;
-  border-width: 15px 15px 14px 15px;
-  border-color: #ffffff71;
-}
+
 
 img{
   display: block;
   margin: auto;
   width: 400px;
   height: 400px;
-}
-
-#contenido{
-  width: 90px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
 }
 
 
@@ -296,6 +272,7 @@ footer{
   align-items: center;
   border: 6px solid black;
   
+  
 }
 
 .form input {
@@ -397,7 +374,7 @@ footer{
   
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 350px) {
 
   .contenedor{
 
@@ -423,5 +400,4 @@ footer{
   
 
 }
-
 
